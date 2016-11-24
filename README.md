@@ -19,3 +19,29 @@
   else
   alert("Your name is steven..")
  }
+ 
+ 
+ ----------------------------------------------------------
+ 
+ <ion-content padding>
+      <ion-item>
+    <ion-label floating>First Name</ion-label>
+    <ion-input [(ngModel)]="name1" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+    <ion-label floating>Second Name</ion-label>
+    <ion-input [(ngModel)]="name2" type="text"></ion-input>
+
+    
+     </ion-item>
+<button ion-button (click)="name()"> Greet Me </button>
+
+ 
+ 
+  name(){
+    if( this.name1 === this.name2)
+   alert("Good afternoon " + this.name1);
+  else if(this.name1 || this.name2 )
+  alert("Good night " + this.name1 + "  " + 
+  "Good night " + this.name2);
+ }
