@@ -38,10 +38,11 @@
 
  
  
-  name(){
+   name(){
     if( this.name1 === this.name2)
    alert("Good afternoon " + this.name1);
-  else if(this.name1 || this.name2 )
+   else
   alert("Good night " + this.name1 + "  " + 
   "Good night " + this.name2);
  }
+ 
