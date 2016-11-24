@@ -38,11 +38,33 @@
 
  
  
-   name(){
-    if( this.name1 === this.name2)
+  @Component({
+  selector: 'page-home',
+  templateUrl: 'home.html'
+})
+
+export class HomePage {
+name1: string = '';
+name2: string = '';
+errorChk;
+// title = 'Tour of Heroes';
+// heroes = HEROES;
+// selectedHero: Hero;
+  
+  //  onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  // }
+  
+  constructor(public navCtrl: NavController) {  }
+
+  name(){
+   if( this.name1 == '' && this.name2 == '') alert ('fill the form')
+   else if( this.name1 === this.name2)
    alert("Good afternoon " + this.name1);
-   else
+  else
   alert("Good night " + this.name1 + "  " + 
   "Good night " + this.name2);
  }
+
+  
  
